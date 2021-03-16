@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home - My walking app</title>
+  <title>{{ title }} - {{ site.title }}</title>
   <link rel="stylesheet" href="/assets/style.css" />
 </head>
 
@@ -28,22 +28,11 @@
     <img src="assets/img/banner.jpg" alt="...">
   </figure>
   <main>
-  
-
-<section class="news--section">
-this is a test text
-
-  Create your own route!
-
-  Create your own route!
-
-  Create your own route!
-
-</section>
+  {{ content | safe }}
   </main>
   <footer>
     <div class="footer--section">
-    <p>copyright 2021 Nick</p>
+    <p>copyright {{ helpers.currentYear() }} Nick</p>
       <ul>
         <li><a href="">footer</a></li>
         <li><a href="">footer</a></li>
