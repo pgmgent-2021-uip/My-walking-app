@@ -1,0 +1,19 @@
+.contact{
+  &--page{
+    background-color: white;
+    padding: 2rem;
+    border-radius: 50px;
+    box-sizing: border-box;
+    >h2 {
+      color: rgb(255, 81, 0);
+      @media (min-width: 875px) {
+      }
+    }
+    >p {
+      width: 70%;
+      @media (min-width: 875px) {
+    width: 90%;
+      }
+    }
+  }
+}

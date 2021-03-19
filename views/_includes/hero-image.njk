@@ -1,0 +1,25 @@
+---
+layout: base
+---
+
+{# <img src="assets/img/features.png" /> #}
+
+<h1  class="wrapper">{{ title }}</h1>
+<small>{{ subtitle }}</small>
+
+<br/>
+<br/>
+
+    {{ content | safe }}
+
+{% if allAuthors | length %}
+    <h2>De auteurs van deze blog zijn:</h2>
+
+    <ul>
+        {% for author in allAuthors %}
+                <li>
+                    {{ author }}
+                </li>
+        {% endfor %}
+    </ul>
+{% endif %}
