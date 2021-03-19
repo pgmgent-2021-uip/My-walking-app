@@ -4,7 +4,7 @@
     "title": "Hiking!",
     "desc": "we offer a whole list of hikes in a wide variety of style. alone or in group ? , single day or mulitiple days ?, with or without a guide ? we have it all ",
     "subTitle": "Wide variety of hikes!",
-    "link" : "",
+    "link" : "features/hikes/index.html",
     "images" : [
       "assets/img/hike-1.svg",
       "assets/img/hike-2.svg",
@@ -15,7 +15,7 @@
     "title": "Friends and socials!",
     "desc": "Make new friends and go hike with new people, invite them for a hike or send them a quick message at anytime",
    "subTitle": "Make new friends while walking!",
-    "link": "",
+    "link": "features/socials/index.html",
     "images": [
       "assets/img/social-1.svg",
       "assets/img/social-2.svg",
@@ -26,7 +26,7 @@
     "title": "Stats tracker!",
     "desc": "See all your stats in 1 place. things such as your amount of KM walked, est. hours walked etc..!",
     "subTitle": "1 place, all your statistics!",
-    "link": "",
+    "link": "features/stats/index.html",
     "images": [
       "assets/img/stat-1.svg",
       "assets/img/stat-2.svg",
