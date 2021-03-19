@@ -37,7 +37,10 @@
 
 header{
     position: relative;
-    height: 20vh;
+    height: 10vh;
+    @media (min-width:875px) {
+      height: 20vh;
+    }
   }
   .hero-image{
     &--horizontal{
@@ -60,7 +63,7 @@ header{
     margin: auto;
     display: flex;
     justify-content: flex-end;
-    background-color: rgb(255, 81, 0);
+    background-color: $orange;
     padding: 1rem;
     border-radius: 0 0 50px 50px;
     z-index: auto;

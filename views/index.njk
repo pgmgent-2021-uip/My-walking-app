@@ -10,241 +10,141 @@ eleventyNavigation:
 
 <section class="hero row">
     <div class="hero__decoration col-8">
-        <img
-            class="hero__decoration__image"
-            src="../assets/img/logo-large.png"/>
+        <img class="hero__decoration__image" src="../assets/img/logo-large.png" />
     </div>
 
-    <article class="hero__content col-4">
+    {% if features | length %}
+    <article class="hero__content">
         <h2 class="lead-title--black">
             What do we offer?
         </h2>
-
         <ul class="hero__content__list">
+
+            {% for feature in features %}
             <li class="hero__content__list__item">
-                <small class="detail-title">Friends</small>
+                <small class="detail-title">{{ feature.title }}</small>
 
-                <strong class="base-title">Make new friends while walking!</strong>
-
-                <p class="hero__content__list__item__text">
-                    Cillum velit commodo aliqua pariatur duis laborum consequat exercitation in esse ex.
-                </p>
+                <strong class="base-title">{{ feature.subTitle }}</strong>
+                <p class="hero__content__list__item__text"> {{ feature.desc }} </p>
             </li>
-            <li class="hero__content__list__item">
-                <small class="detail-title">Friends</small>
-
-                <strong class="base-title">Make new friends while walking!</strong>
-
-                <p class="hero__content__list__item__text">
-                    Cillum velit commodo aliqua pariatur duis laborum consequat exercitation in esse ex.
-                </p>
-            </li>
-            <li class="hero__content__list__item">
-                <small class="detail-title">Friends</small>
-
-                <strong class="base-title">Make new friends while walking!</strong>
-
-                <p class="hero__content__list__item__text">
-                    Cillum velit commodo aliqua pariatur duis laborum consequat exercitation in esse ex.
-                </p>
-            </li>
+            {% endfor %}
         </ul>
     </article>
+    {% endif %}
 </section>
-    <main class="container">
-        <section class="hero">
-            <img src="" alt="">
 
-            <article>
-                <h1>What you might like</h1>
+<main class="container main">
+    <section class="hero wrapper">
+        <img src="assets/img/features.png" alt="hello">
+    </section>
 
-                <ul>
-                    <li>
-                        <span>Trip Revieuws</span>
-                        <strong>The Andaman Islands</strong>
-                        <p>Few things get the world's travel excited like...</p>
-                    </li>
-                    <li>
-                    <li>
-                        <span>Travel guides</span>
-                        <strong>Five reasons to visit oman</strong>
-                        <p>We think that the Middle Eastern country of Oman...</p>
-                    </li>
-                    <li>
-                    <li>
-                        <span>Trip Revieuws</span>
-                        <strong>A dessert Oasiss in Jordan</strong>
-                        <p>Arrivving after a long, satisfying walk through part of...</p>
-                    </li>
-                </ul>
-            </article>
-        </section>
-        <section>
-            <article>
-                <div>
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                </div>
+    {% if features | length %}
 
-                <hr>
+    <section class="features wrapper container">
 
-                <div>
-                    <strong>Title of the feature</strong>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam eveniet rem quia saepe soluta
-                        exercitationem, reiciendis, ut alias atque, dolor quo modi quod in doloribus iusto fugit rerum
-                        repellat amet!</p>
-                    <button>Primary button</button>
-                </div>
-            </article>
+        {% for feature in features %}
+        <article class="features--article wrapper">
+            <div class="features--img">
+                {% for img in feature.images %}
+                <img src={{ img }} alt="...">
+                {% endfor %}
+            </div>
 
-            <article>
-                <div>
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                </div>
+            <hr>
 
-                <hr>
+            <div class="features--content">
+                <strong class="features--content--title">{{ feature.title }}</strong>
+                <p class="features--content--text">{{ feature.desc }}</p>
+                <button class="features--content--cta">More about this feature</button>
+            </div>
+        </article>
+        {% endfor %}
+    </section>
+    {% endif %}
 
-                <div>
-                    <strong>Title of the feature</strong>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam eveniet rem quia saepe soluta
-                        exercitationem, reiciendis, ut alias atque, dolor quo modi quod in doloribus iusto fugit rerum
-                        repellat amet!</p>
-                    <button>Primary button</button>
-                </div>
-            </article>
-            <article>
-                <div>
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                </div>
+    <h2 class="subtitle wrapper container">Reviews</h2>
 
-                <hr>
+    {% if reviews | length %}
+    <section class="testi container wrapper">
+        {% for review in reviews %}
+        <article class="testi--article wrapper">
+            <div class="testi--article--content">
+                <em><span>"</span>{{ review.title }}</em>
+                <div class="testi--article--content--user">
+                    <img src={{ review.image }} alt="">
+                    <span>Review by <strong> {{ review.name }}</strong></span>
+                </div>
+            </div>
+        </article>
+        {% endfor %}
+    </section>
+    {% endif %}
 
-                <div>
-                    <strong>Title of the feature</strong>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam eveniet rem quia saepe soluta
-                        exercitationem, reiciendis, ut alias atque, dolor quo modi quod in doloribus iusto fugit rerum
-                        repellat amet!</p>
-                    <button>Primary button</button>
-                </div>
-            </article>
-        </section>
-        <section>
-            <article>
-                <h3>Testimonials</h3>
-                <div>
-                    <em>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius ipsam repellat at minus totam
-                        eaque amet quaerat doloremque qui veniam voluptatum, atque vitae illum eos! Libero officia
-                        distinctio dolor amet!</em>
-                    <div>
-                        <img src="" alt="">
-                        <span>Review by <strong>Name Surname</strong></span>
-                    </div>
-                </div>
-            </article>
-            <article>
-                <em>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius ipsam repellat at minus totam
-                    eaque amet quaerat doloremque qui veniam voluptatum, atque vitae illum eos! Libero officia
-                    distinctio dolor amet!</em>
-                <div>
-                    <img src="" alt="">
-                    <span>Review by <strong>Name Surname</strong></span>
-                </div>
-                </div>
-            </article>
-            <article>
-                <em>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius ipsam repellat at minus totam
-                    eaque amet quaerat doloremque qui veniam voluptatum, atque vitae illum eos! Libero officia
-                    distinctio dolor amet!</em>
-                <div>
-                    <img src="" alt="">
-                    <span>Review by <strong>Name Surname</strong></span>
-                </div>
-                </div>
-            </article>
-        </section>
-        <section>
-            <article>
-                <h3>Klanten</h3>
-                <ul>
-                    <li><img src="" alt="">Logo</li>
-                    <li><img src="" alt="">Logo</li>
-                    <li><img src="" alt="">Logo</li>
-                    <li><img src="" alt="">Logo</li>
-                    <li><img src="" alt="">Logo</li>
-                    <li><img src="" alt="">Logo</li>
-                    <li><img src="" alt="">Logo</li>
-                    <li><img src="" alt="">Logo</li>
-                    <li><img src="" alt="">Logo</li>
-                    <li><img src="" alt="">Logo</li>
-                </ul>
-            </article>
-        </section>
-        <section>
-            <article>
-                <img src="" alt="">
-                <h4>Chineese new year - The year of the Dog</h4>
-                <p>Tour leader Amanda has just returned ti Dhake ready to lead her third tour in bangladesh. Here she explains how the country differed form her expectations</p>
-            </article>
-            <article>
-                <img src="" alt="">
-                <h4>Birds, beasts and beauties of bangladesh</h4>
-                <p>Tour leader Amanda has just returned ti Dhake ready to lead her third tour in bangladesh. Here she explains how the country differed form her expectations</p>
-            </article>
-            <article>
-                <img src="" alt="">
-                <h4>The Emty Quarter Desert - Rub al Khali</h4>
-                <p>The Arabic name Rub al Khali means "emty quarter". the name was given to it because it's a huge stretch of unbroken sand desert that has bested kings</p>
-            </article>
-        </section>
-        <hr />
-        <p>waziosdspudhsdpiuh</p>
-        <section>
-            <h2>Hero Banner with Aspect Ratio</h2>
+    <h2 class="wrapper">Sponsors</h2>
+    <section>
+        <article class="sponsor container wrapper">
+            <ul class="sponsor--list">
+                <li><img src="assets/img/Sponsor.jpg" alt=""></li>
+                <li><img src="assets/img/Sponsor.jpg" alt=""></li>
+                <li><img src="assets/img/Sponsor.jpg" alt=""></li>
+                <li><img src="assets/img/Sponsor.jpg" alt=""></li>
+                <li><img src="assets/img/Sponsor.jpg" alt=""></li>
+                <li><img src="assets/img/Sponsor.jpg" alt=""></li>
+                <li><img src="assets/img/Sponsor.jpg" alt=""></li>
+                <li><img src="assets/img/Sponsor.jpg" alt=""></li>
+                <li><img src="assets/img/Sponsor.jpg" alt=""></li>
+                <li><img src="assets/img/Sponsor.jpg" alt=""></li>
+            </ul>
+        </article>
+    </section>
 
-            <figure class="display-image--sixteen-nine">
-                <img
-                    src="https://images.unsplash.com/photo-1523215108660-3fdf7932d7a5?ixid=MXwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1045&q=80" />
-            </figure>
-        </section>
-    </main>
+    {% if blog | length %}
+    <h2 class="wrapper">Blog</h2>
+
+    <section class="blog container wrapper">
+        {% for blog in blog %}
+        <article class="blog--article wrapper">
+            <img src={{ blog.image }} alt="">
+            <h4>{{ blog.title }}</h4>
+            <p>{{ blog.description }}</p>
+        </article>
+        {% endfor %}
+    </section>
+    {% endif %}
+    <hr />
+</main>
 
 {% if quotes | length  %}
-    <section class="container">
-        <h2>Quotes</h2>
+<h2 class="subtitle wrapper">Quotes</h2>
+<section class="qoutes wrapper">
+    <ul class="qoutes--list">
+        {% for quote in quotes %}
+        <li>
+            <figure>
+                <blockquote>
+                    "{{ quote.quote }}"
+                </blockquote>
+                <figcaption>— {{ quote.author }}</figcaption>
+            </figure>
+        </li>
+        {% endfor %}
+    </ul>
 
-        <ul>
-            {% for quote in quotes %}
-                    <li>
-                        <figure>
-                            <blockquote>
-                                "{{ quote.quote }}"
-                            </blockquote>
-
-                            <figcaption>— {{ quote.author }}</figcaption>
-                        </figure>
-                    </li>
-            {% endfor %}
-        <ul>
-    </section>
+</section>
 {% endif %}
 
 {% if collections.features | length %}
-    <section class="container">
-        <h2>Features</h2>
+<section class="container wrapper">
+    <h2 class="subtitle">Features</h2>
 
-        {% for feature in collections.features %}
-            <ul>
-                <li>
-                    <a href="{{ feature.url }}">
-                        {{ feature.data.title }}
-                    </a>
-                </li>
-            </ul>
-        {% endfor %}
-    </section>
+    {% for feature in collections.features %}
+    <ul>
+        <li>
+            <a href="{{ feature.url }}">
+                {{ feature.data.title }}
+            </a>
+        </li>
+    </ul>
+    {% endfor %}
+</section>
 {% endif %}

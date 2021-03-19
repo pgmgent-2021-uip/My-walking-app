@@ -2,8 +2,29 @@ body{
   font-family: 'Raleway', sans-serif;
 }
 
+h1{
+}
+h2{
+  font-size: 1.3rem;
+}
+h3{
+
+}
+h4{
+
+}
+p{
+  
+}
+small{
+
+}
+strong{
+
+}
 @media(min-width:875px){
   h1{
+    
   }
   h2{
     font-size: 3rem;
@@ -15,5 +36,12 @@ body{
   
   }
   p{
+
+  }
+  small{
+
+  }
+  strong{
+
   }
 }
