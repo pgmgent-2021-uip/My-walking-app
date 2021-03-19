@@ -3,25 +3,24 @@ layout: hero-image
 title: Artikels
 tags:
 subtitle: Hier komen alle artikels!
-allAuthors:
-    - Adriaan
-    - Benedikte
-    - Mina
-    - Bram
-    - Silke
 eleventyNavigation:
     key: News
     order: 2
 ---
-
-Hier komen alle artikels! Lorem ipsum!
-
+<main class="news">
+<h1> {{ title }}</h1>
 <ul>
-    {% for article in collections.news %}
-        <li>
-            <a href="{{ article.url }}">
-                {{ article.data.title }}
-            </a>
+    {% for article in news %}
+        <li class="news--list"> 
+            <div class="news--list--content">
+                <h2 class="subtitle">Post by: {{ article.source.name }}</h2>
+                <h3>{{ article.title }}</h3>
+                <h3>{{ article.description }}</h3>
+                <img src={{ article.urlToImage }} alt="">
+                <p>{{ article.content }}</p>
+                <p> <strong>{{ article.author }}</strong> • {{ article.publishedAt }} </p>
+            </div>
         </li>
     {% endfor %}
 </ul>
+</main>

@@ -1,0 +1,28 @@
+.news{ 
+  ul{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  background-color: white;
+  padding: 2rem;
+  border-radius: 50px;
+  box-sizing: border-box;
+  &--list{
+    box-sizing: border-box;
+    list-style: none;
+    width: 45%;
+    margin: auto;
+    &--content{
+      height: fit-content;
+      box-sizing: border-box;
+      margin-bottom: 10rem;
+      img{
+        width: 25rem;
+      }
+      @media (min-width: 875px) {
+  
+      }
+      height: 25rem;
+    }
+  }
+}
