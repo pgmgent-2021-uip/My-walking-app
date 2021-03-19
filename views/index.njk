@@ -1,59 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - My Walking App</title>
-    <link rel="stylesheet" href="/assets/main.css" />
-</head>
-<body>
-    
+---
+layout: base
+title: Home
+eleventyNavigation:
+    key: Home
+    order: 1
+---
 
-<header>
-  <div class="header wrapper">
-  <figure class="logo wrapper">
-    <img src="../assets/img/logo.png" alt="">
-  </figure>
-        <nav class="navbar wrapper">
-            <ul class="navbar--list">
-                
-                    <li>
-                        <a href="/">
-                            
-                                <strong>
-                                    Home
-                                </strong>
-                            
-                        </a>
-                    </li>
-                
-                    <li>
-                        <a href="/news/">
-                            
-                                News
-                            
-                        </a>
-                    </li>
-                
-                    <li>
-                        <a href="/contact/">
-                            
-                                Contact
-                            
-                        </a>
-                    </li>
-                
-            </ul>
-        </nav>
-    </div>
-        <a class="hero-image--horizontal">
-            <img src="../assets/img/banner.jpg" alt="...">
-        </a>
-</header>
-
-    <main>
-        
 <h1 class="sr-only">My Walking App</h1>
 
 <section class="hero row">
@@ -261,95 +213,38 @@
         </section>
     </main>
 
-
+{% if quotes | length  %}
     <section class="container">
         <h2>Quotes</h2>
 
         <ul>
-            
+            {% for quote in quotes %}
                     <li>
                         <figure>
                             <blockquote>
-                                "Id labore non nostrud anim pariatur anim."
+                                "{{ quote.quote }}"
                             </blockquote>
 
-                            <figcaption>— Adriaan</figcaption>
+                            <figcaption>— {{ quote.author }}</figcaption>
                         </figure>
                     </li>
-            
-                    <li>
-                        <figure>
-                            <blockquote>
-                                "Qui et ex cupidatat nostrud minim velit consequat officia laborum ea irure."
-                            </blockquote>
-
-                            <figcaption>— Benedikte</figcaption>
-                        </figure>
-                    </li>
-            
+            {% endfor %}
         <ul>
     </section>
+{% endif %}
 
-
-
+{% if collections.features | length %}
     <section class="container">
         <h2>Features</h2>
 
-        
+        {% for feature in collections.features %}
             <ul>
                 <li>
-                    <a href="/features/gps/">
-                        GPS
+                    <a href="{{ feature.url }}">
+                        {{ feature.data.title }}
                     </a>
                 </li>
             </ul>
-        
-            <ul>
-                <li>
-                    <a href="/features/socials/">
-                        Socials
-                    </a>
-                </li>
-            </ul>
-        
+        {% endfor %}
     </section>
-
-
-    </main>
-
-    <footer class="footer">
-    <div class="footer--wrapper">
-<div>
-<img src="../assets/img/logo.png">
-</div>
-  <ul class="footer--links wrapper">
-    <section>
-      <h3>footer title</h3>
-      <li><a>footer content</a></li>
-      <li><a>footer content</a></li>
-      <li><a>footer content</a></li>
-      <li><a>footer content</a></li>
-    </section>
-
-    <section>
-      <h3>footer title</h3>
-      <li><a>footer content</a></li>
-      <li><a>footer content</a></li>
-      <li><a>footer content</a></li>
-      <li><a>footer content</a></li>
-    </section>
-
-    <section>
-      <h3>footer title</h3>
-      <li><a>footer content</a></li>
-      <li><a>footer content</a></li>
-      <li><a>footer content</a></li>
-      <li><a>footer content</a></li>
-    </section>
-
-  </ul>
-</div>
-Copyright 2021 @ Nick Roofthooft
-    </footer>
-</body>
-</html>
+{% endif %}
