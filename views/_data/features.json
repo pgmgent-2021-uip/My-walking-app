@@ -4,33 +4,33 @@
     "title": "Hiking!",
     "desc": "we offer a whole list of hikes in a wide variety of style. alone or in group ? , single day or mulitiple days ?, with or without a guide ? we have it all ",
     "subTitle": "Wide variety of hikes!",
-    "link" : "features/hikes/index.html",
+    "link" : "../../features/hikes/index.html",
     "images" : [
-      "assets/img/hike-1.svg",
-      "assets/img/hike-2.svg",
-      "assets/img/hike-3.svg"
+      "../../assets/img/hike-1.svg",
+      "../../assets/img/hike-2.svg",
+      "../../assets/img/hike-3.svg"
     ]
   },
   {
     "title": "Friends and socials!",
     "desc": "Make new friends and go hike with new people, invite them for a hike or send them a quick message at anytime",
    "subTitle": "Make new friends while walking!",
-    "link": "features/socials/index.html",
+    "link": "../../features/socials/index.html",
     "images": [
-      "assets/img/social-1.svg",
-      "assets/img/social-2.svg",
-      "assets/img/social-3.svg"
+      "../../assets/img/social-1.svg",
+      "../../assets/img/social-2.svg",
+      "../../assets/img/social-3.svg"
     ]
   },
   {
     "title": "Stats tracker!",
     "desc": "See all your stats in 1 place. things such as your amount of KM walked, est. hours walked etc..!",
     "subTitle": "1 place, all your statistics!",
-    "link": "features/stats/index.html",
+    "link": "../../features/stats/index.html",
     "images": [
-      "assets/img/stat-1.svg",
-      "assets/img/stat-2.svg",
-      "assets/img/stat-3.svg"
+      "../../assets/img/stat-1.svg",
+      "../../assets/img/stat-2.svg",
+      "../../assets/img/stat-3.svg"
     ]
   }
 ]

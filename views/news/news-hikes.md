@@ -1,7 +1,8 @@
 ---
-img: 'banner.jpg'
-title: Our app has a new feature!
-author: Adriaan Glibert
+title: Hikes! alot of hikes
+author: Nick R.
+desc: this is a test desc
+img: hiking-banner.jpg
 ---
 
 ## h2 Heading

@@ -41,3 +41,6 @@
 // 7. Themes
 @import
   'themes/default';
+  a{
+    color: unset
+  }

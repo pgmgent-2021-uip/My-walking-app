@@ -2,14 +2,7 @@
 layout: base
 ---
 
-{% if img %}
-    <img src="/assets/img/{{ img }}" />
-{% else %}
-    <img src="/assets/img/fallback.jpg"/>
-{% endif %}
-
 <div class="container">
-    <h1>{{ title }}</h1>
 
     <div>
         <small>{{ author }}</small>
@@ -21,15 +14,18 @@ layout: base
 </article>
 
 {% if  collections.news | length %}
-    <section class="container">
-        <h2>Andere artikels:</h2>
+    <section class="container wrapper more--news">
+        <h2 class="subtitle">Read our idea behind our features!</h2>
 
         <ul>
             {% for article in collections.news %}
                 {% if article.url !== page.url %}
                     <li>
+                    <img src="../../assets/img/{{ article.data.img }}">
                         <a href="{{ article.url }}">
-                            {{ article.data.title }}
+                            <h2>{{ article.data.title }}</h2>
+                            <p>{{ article.data.desc }}</p>
+                            <small>blog was made: {{ helpers.currentDate() }}</small>
                         </a>
                     </li>
                 {% endif %}

@@ -1,0 +1,21 @@
+
+{% if features | length %}
+  <h2 class="subtitle wrapper">Features van ons</h2>
+  <section class="features wrapper container">
+      {% for feature in features %}
+        <article class="features--article wrapper">
+            <div class="features--img">
+                {% for img in feature.images %}
+                <img src={{ img }} alt="...">
+                {% endfor %}
+            </div>
+            <hr>
+            <div class="features--content">
+                <strong class="features--content--title">{{ feature.title }}</strong>
+                <p class="features--content--text">{{ feature.desc }}</p>
+                <button class="features--content--cta"><a href={{ feature.link }}>More about this feature</a></button>
+            </div>
+        </article>
+      {% endfor %}
+  </section>
+{% endif %}

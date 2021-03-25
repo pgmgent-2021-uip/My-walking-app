@@ -78,6 +78,10 @@
  .subtitle{
   color: $orange;
  }
+ .title{
+   color: $orange;
+   text-decoration: underline $orange;
+ }
 .main{
   >h2{
     color: $orange;
