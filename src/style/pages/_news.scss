@@ -69,3 +69,55 @@
     }
   }
 }
+table{
+  thead{
+display: none;
+    tr{
+
+      th{
+        
+      }
+    }
+  }
+  tbody{
+    tr{
+      display: flex;
+      justify-content: space-around;
+      td{
+        &:hover{
+          width: 31%;
+          transition: 0.2s;
+          cursor: pointer;
+          box-sizing: border-box;
+        }
+        width: 30%;
+        img{
+      width: 100%;
+        }
+      }
+    }
+    
+  }
+}
+.post{
+  background: white;
+  border: 4px solid gray;
+  border-radius: 50px;
+  width: 80%;
+  margin-top: 10rem;
+  padding: 1rem 1rem;
+  max-width: 110rem;
+   .iframe{
+     padding: 1rem;
+     background: white;
+     border-radius: 50px;
+    margin: auto;
+  width: fit-content;
+  max-width: 100%;
+  box-sizing: border-box;
+  iframe{
+    border-radius: 50px;
+    max-width: 100%;
+  }
+  }
+}

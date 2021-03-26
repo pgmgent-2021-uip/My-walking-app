@@ -26,4 +26,6 @@ eleventyNavigation:
     {% endfor %}
 </ul>
 </main>
+{{ content | safe }}
+
 {% include "_components/featuresComp.njk" %}
