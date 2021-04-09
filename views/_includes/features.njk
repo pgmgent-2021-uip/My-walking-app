@@ -2,8 +2,7 @@
 layout: base
 ---
 
-<div class="container">
-    <h1>{{ title }}</h1>
+<main class="wrapper container featureArticle feature--{{ title }}">
     {{ content | safe  }}
-</div>
+</main>
 {% include "_components/featuresComp.njk" %}

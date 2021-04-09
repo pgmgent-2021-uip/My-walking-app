@@ -1,20 +1,8 @@
 ---
 layout: base
 ---
-
-<div class="container">
-
-    <div>
-        <small>{{ author }}</small>
-    </div>
-</div>
-
-<article class="container post">
-    {{ content | safe }}
-</article>
-
 {% if  collections.news | length %}
-    <section class="container wrapper more--news">
+    <section class="more--news">
         <h2 class="subtitle">Read our idea behind our features!</h2>
 
         <ul>
@@ -33,3 +21,7 @@ layout: base
         </ul>
     </section>
 {% endif %}
+<article class="post">
+    {{ content | safe }}
+</article>
+

@@ -1,7 +1,6 @@
 ---
 title: Hikes! alot of hikes
 author: Nick R.
-desc: this is a test desc
 img: hiking-banner.jpg
 ---
 
@@ -56,6 +55,8 @@ On the days you can’t make it to the trails, power-walk on a hilly terrain whi
 
 
 
-|qq |qq | qq |
-|-----|-----|-----|
-| ![picture](/assets/img/news-1.jpg) | ![picture](/assets/img/news-2.jpg) | ![picture](/assets/img/news-3.jpg) |
+<div class="MD--images">
+<img src="/assets/img/news-1.jpg">
+<img src="/assets/img/news-2.jpg">
+<img src="/assets/img/news-3.jpg">
+</div>

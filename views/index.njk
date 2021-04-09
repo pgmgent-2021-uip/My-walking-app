@@ -15,7 +15,7 @@ eleventyNavigation:
 
     {% if features | length %}
     <article class="hero__content">
-        <h2 class="lead-title--black">
+        <h2 class=" subtitle lead-title--black">
             What do we offer?
         </h2>
         <ul class="hero__content__list">
@@ -81,7 +81,7 @@ eleventyNavigation:
     </section>
     {% endif %}
 
-    <h2 class="wrapper">Sponsors</h2>
+    <h2 class="wrapper subtitle">Sponsors</h2>
     <section>
         <article class="sponsor container wrapper">
             <ul class="sponsor--list">
@@ -100,11 +100,11 @@ eleventyNavigation:
     </section>
 
     {% if blog | length %}
-    <h2 class="wrapper">Blog</h2>
+    <h2 class="wrapper subtitle">Blog</h2>
 
-    <section class="blog container wrapper">
+    <section class="blog container">
         {% for blog in blog %}
-        <article class="blog--article wrapper">
+        <article class="blog--article">
             <img src={{ blog.image }} alt="">
             <h4>{{ blog.title }}</h4>
             <p>{{ blog.description }}</p>
@@ -116,7 +116,7 @@ eleventyNavigation:
 </main>
 
 {% if quotes | length  %}
-<h2 class="subtitle wrapper">Quotes</h2>
+<h2 class="subtitle wrapper ">Quotes</h2>
 <section class="qoutes wrapper">
     <ul class="qoutes--list">
         {% for quote in quotes %}

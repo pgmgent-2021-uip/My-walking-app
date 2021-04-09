@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Nieuws
+title: News from other sources
 tags:
-subtitle: Hier komen alle artikels!
 eleventyNavigation:
     key: News
     order: 2
 ---
-<main class="news wrapper container ">
-<h1 class="title wrapper"> {{ title }}</h1>
+
+<main class="news">
+<h1 class="title"> {{ title }}</h1>
 <ul>
     {% for article in news %}
         <li class="news--list">
@@ -16,7 +16,6 @@ eleventyNavigation:
                 <div class="news--list--content">
                     <h2 class="subtitle">Post by: {{ article.source.name }}</h2>
                     <h3>{{ article.title }}</h3>
-                    <h3>{{ article.description }}</h3>
                     <img src={{ article.urlToImage }} alt="">
                     <p>{{ article.content }}</p>
                     <p> <strong>{{ article.author }}</strong> • {{ article.publishedAt }} </p>
