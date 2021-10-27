@@ -13,18 +13,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pgmgent-2021-uip/exercises-adriaanglibert.git"
+    "url": ""
   },
   "keywords": [
     "Walking",
     "Eleventy"
   ],
-  "author": "Adriaan Glibert",
-  "license": "MIT",
+  "author": "",
+  "license": "",
   "bugs": {
-    "url": "https://github.com/pgmgent-2021-uip/exercises-adriaanglibert/issues"
+    "url": ""
   },
-  "homepage": "https://github.com/pgmgent-2021-uip/exercises-adriaanglibert#readme",
+  "homepage": "",
   "devDependencies": {
     "@11ty/eleventy": "^0.11.1",
     "@11ty/eleventy-navigation": "^0.1.6",
