@@ -12,6 +12,7 @@ module.exports = function (eleventyConfig) {
         dir: {
             input: 'views',
             output: 'docs'
-        }
+        },
+        pathPrefix: "/My-walking-app/",
     }
 }
