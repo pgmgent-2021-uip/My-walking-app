@@ -1,0 +1,146 @@
+.features{
+  @media (min-width:875px) {
+    display: flex;
+    
+  }
+  &--article{
+  text-align: center;
+  margin-bottom: 4rem;
+  @media (min-width:875px) {
+    margin-bottom: 0;
+    
+  }
+}
+&--img{
+  display: flex;
+  margin: auto;
+  justify-content: space-evenly;
+  align-items: baseline;
+  >img{
+    &:nth-child(2){
+      width: 6rem;
+      margin-bottom: 2rem;
+    }
+    width: 4rem;
+    height: fit-content;
+  }
+}
+&--content{
+  
+  &--title{
+    
+  }
+  &--text{
+
+  }
+  &--cta{
+    background-color: $orange;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    border: none;
+    &:hover{
+    background-color: $orange-hover;
+    cursor: pointer;
+    }
+  }
+}
+}
+.testi{
+
+  @media (min-width:875px) {
+    display: flex;
+  }
+  &--article{
+    @media (min-width: 875px) {
+      max-width: 30%;
+    }
+    &--content{
+      >em{
+        margin-bottom: 2rem;
+        >span{
+          font-size: 3rem;
+          font-weight: bold;
+          height: fit-content;
+        }
+      }
+      &--user{
+        display: flex;
+        align-items: center;
+        >img{
+        width: 4rem;
+        border-radius: 50px;
+        }
+      }
+    }
+  }
+}
+ .subtitle{
+  color: $orange;
+ }
+ .title{
+   color: $orange;
+   text-decoration: underline $orange;
+ }
+.main{
+  >h2{
+    color: $orange;
+  }
+}
+.sponsor{
+  &--list{
+    padding-inline-start: 0;
+    display: flex;
+    flex-wrap: wrap;
+    >li{
+      list-style: none;
+      width: 20%;
+      @media (min-width: 875px) {
+      }
+      >img{
+      }
+    }
+  }
+}
+.blog{
+  display: flex;
+  &--article{
+    width: 30%;
+    margin: 0 auto;
+    @media (min-width:875px) {
+    }
+    >img{
+    }
+    >h4{
+
+    }
+    >p{
+
+    }
+  }
+}
+.qoutes{
+  &--list{
+    @media (min-width:875px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+       li{
+        max-width: 30%;
+      }
+    }
+    >li{
+      list-style: none;
+      >figure{
+
+        >blockquote{
+
+
+        }
+        >figcaption{
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}

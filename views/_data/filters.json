@@ -1,0 +1,38 @@
+[
+  {
+    "img": "Filter_1.jpg",
+    "name": "Mountain Hikes"
+},
+{
+  "img": "Filter_2.jpg",
+  "name": "Group/Guided"
+},
+{
+  "img": "Filter_3.jpg",
+  "name": "Cabbinhunt"
+},
+{
+  "img": "Filter_4.jpg",
+  "name": "Short Hikes"
+},
+{
+  "img": "Filter_5.jpg",
+  "name": "Hikes with dogs"
+},
+{
+  "img": "Filter_6.jpg",
+  "name": "Solo hikes"
+},
+{
+  "img": "Filter_7.jpg",
+  "name": "short goal-hikes"
+},
+{
+  "img": "Filter_8.jpg",
+  "name": "With friends"
+},
+{
+  "img": "Filter_9.jpg",
+  "name": "in the snow"
+}
+]

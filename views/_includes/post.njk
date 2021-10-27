@@ -1,0 +1,28 @@
+---
+root: ../
+layout: base
+---
+{% if  collections.news | length %}
+    <section class="more--news">
+        <h2 class="subtitle">Read our idea behind our features!</h2>
+
+        <ul>
+            {% for article in collections.news %}
+                {% if article.url !== page.url %}
+                    <li>
+                    <img src="{{root}}assets/img/{{ article.data.img }}">
+                        <a href="{{ article.url }}">
+                            <h2>{{ article.data.title }}</h2>
+                            <p>{{ article.data.desc }}</p>
+                            <small>blog was made: {{ helpers.currentDate() }}</small>
+                        </a>
+                    </li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+    </section>
+{% endif %}
+<article class="post">
+    {{ content | safe }}
+</article>
+

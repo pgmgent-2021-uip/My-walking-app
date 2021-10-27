@@ -1,0 +1,127 @@
+---
+layout: features
+root: ../
+tags: features
+title: Hiking
+desc: Learn more about what our feature offers!
+---
+<div class="header--search">
+    <div>
+        <label for="searchHike"><span> Find your next favorite trail</span> </label>
+    </div>
+    <section>
+        <input type="search" name="" placeholder="Enter a city, park or trail by name" id="searchHike">
+        <button type="submit">Search</button>
+    </section>
+</div>
+<section class="content--page">
+    <div class="header" id="Hiking">
+        <h2 class="subtitle">{{ title }}</h2>
+        <h3>{{ desc }}</h3>
+    </div>
+    <div class="hike">
+        <section class="hike--images">
+            <h2>Go alone!</h2>
+            <img src="/assets/img/banner_!.jpg" alt="">
+        </section>
+        <section class="hike--images">
+            <img src="/assets/img/hiking-banner.jpg" alt="">
+            <h2>Or with friends?</h2>
+        </section>
+        <section class="hike--images">
+            <h2>Or maybe you prefer a group and a guide.</h2>
+            <img src="/assets/img/hiking_group.webp" alt="">
+        </section>
+        <h2 class="hike--hero container">
+            To be direct..We have it all!
+        </h2>
+        <!-- <p>
+            Hiking has never been this much fun and relaxing! Go alone on long hikes or bring a friend along with you or go in a group with a guide the whole way!
+        </p> -->
+        <section class="hike--covid">
+            <p class="hike--covid--content">Note! Before going on a hike check your goverment's law's concerning Covid.
+                GO-Hike is not responsible for any violations, tickets or anything else related to the
+                covid-restrictions. We also reccomend not hiking with more then 2-3 people or people from outside your
+                own family and friends.</p>
+            <p class="hike--covid--end">Wear a mask! Hike safe!</p>
+        </section>
+    </div>
+</section>
+<section class="hike--content">
+    <div class="feature--menu">
+        <h2 class="subtitle container">What this page contains</h2>
+        <ul>
+            <li><a href="#Hiking"> Hiking</a></li>
+            <li><a href="#WhatIsHiking">What is hiking?</a></li>
+            <li><a href="#GuidedHikes"> Guided Hikes</a></li>
+            <li><a href="#filter"> Check out our filters</a></li>
+            <li><a href="#MoreFeatures"> MoreFeatures</a></li>
+        </ul>
+    </div>
+
+    <article class="hike--content--article">
+        <h2 class="subtitle container" id="WhatIsHiking">What is hiking?</h2>
+        <div class="hike--content--about">
+            <section>
+                <p>
+                    Hikes zijn er  op verschillende niveau’s en er is daarom ook een uitdaging voor iedere hiker. Sommige hikes gaan stijl omhoog, andere over stenen. Het is dan ook handig om je goed voor te bereiden voor een hike.
+                </p>
+                <p>Hiking is the most fun way for us to explore a destination. You come to places where many travelers - due
+                    to the long distance - do not come. Many travelers hike on their vacation or trip because you get to see
+                    places that are sometimes only accessible by a long and sometimes difficult hike (think of the
+                    Trolltunga in Norway). In addition, hiking gives you a kind of relaxation because you are in nature. But
+                    hiking, walking, trekking and climbing are all used interchangeably. In this article we explain what
+                    hiking exactly means and you will find other useful hiking tips to be well prepared!
+                </p>
+            </section>
+            <section>
+                <h2>Be prepared!</h2>
+                <ul>
+                    <li>Navigation tools such as a map and compass</li>
+                    <li>Headlamp</li>
+                    <li>Sun protection</li>
+                    <li>First-aid kit</li>
+                    <li>Knife or multi-tool</li>
+                    <li>Fire</li>
+                    <li>Shelter</li>
+                    <li>Extra food</li>
+                    <li>Extra water</li>
+                    <li>Extra clothes</li>
+                    <li>Hiking backpack</li>
+                    <li>Weather-appropriate clothing (think moisture-wicking and layers)</li>
+                    <li>Hiking boots or shoes</li>
+                </ul>
+            </section>
+        </div>
+    </article>
+    <article class="hike--content--article">
+        <h2 class="subtitle container" id="GuidedHikes">Guided Hikes</h2>
+        <div class="hike--content--article--travel">
+            <section>
+                <h3>Feel like going on a (long) hike in a group with other people? this is what u can expect</h3>
+                <ul>
+                    <li>Overnighting will happen in known accomedations.</li>
+                    <li>hikes happen on a understandable, detailed route.</li>
+                    <li>You will recieve a GPS-tracking device, so no getting lost!</li>
+                    <li>Some hikes allow dogs, check your hike details for more info.</li>
+                    <li>Experienced Guide wil be with the group at all times!</li>
+                </ul>
+            </section>
+            <figure>
+                <img src="/assets/img/hiking_lodge.jpg" alt="">
+            </figure>
+        </div>
+    </article>
+    <h2 class="subtitle container" id="filter">Our most popular filters!</h2>
+    <section class="hike--content--filters">
+        {% for item in filters %}
+        <div>
+            <figure>
+                <img src="/assets/img/{{ item.img }}" alt="">
+                <p>{{ item.name }} </p>
+            </figure>
+        </div>
+        {% endfor %}
+    </section>
+</section>
+<p class="feature--menu--warp" id="MoreFeatures">features-warp</p>
