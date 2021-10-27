@@ -1,7 +1,7 @@
 ---
 layout: base
 title: Home
-root: 
+root: ./
 eleventyNavigation:
     key: Home
     order: 1
@@ -11,7 +11,7 @@ eleventyNavigation:
 
 <section class="hero row">
     <div class="hero__decoration col-8">
-        <img class="hero__decoration__image" src="{{root}}/assets/img/logo-large.png" />
+        <img class="hero__decoration__image" src="{{root}}assets/img/logo-large.png" />
     </div>
 
     {% if features | length %}
