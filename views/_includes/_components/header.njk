@@ -9,7 +9,7 @@
             <ul class="navbar--list">
                 {% for navItem in navPages %}
                     <li>
-                        <a href="{{ navItem.url }}">
+                        <a href="/My-walking-app/{{ navItem.url }}">
                             {% if page.url === navItem.url %}
                                 <strong>
                                     {{ navItem.title }}
