@@ -2,6 +2,7 @@
 title: Hikes! alot of hikes
 author: Nick R.
 img: hiking-banner.jpg
+root: ../../
 ---
 
 ## It´s all about long-distance trails

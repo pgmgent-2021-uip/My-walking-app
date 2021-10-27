@@ -1,4 +1,5 @@
 ---
+root: ../
 layout: base
 ---
 {% if  collections.news | length %}
@@ -9,7 +10,7 @@ layout: base
             {% for article in collections.news %}
                 {% if article.url !== page.url %}
                     <li>
-                    <img src="../../assets/img/{{ article.data.img }}">
+                    <img src="{{root}}assets/img/{{ article.data.img }}">
                         <a href="{{ article.url }}">
                             <h2>{{ article.data.title }}</h2>
                             <p>{{ article.data.desc }}</p>

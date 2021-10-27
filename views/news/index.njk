@@ -2,7 +2,7 @@
 layout: post
 title: News from other sources
 tags:
-root: ../
+root: ../../
 eleventyNavigation:
     key: News
     order: 2
@@ -17,7 +17,7 @@ eleventyNavigation:
                 <div class="news--list--content">
                     <h2 class="subtitle">Post by: {{ article.source.name }}</h2>
                     <h3>{{ article.title }}</h3>
-                    <img src={{ article.urlToImage }} alt="">
+                    <img src="{{ article.urlToImage }}" alt="">
                     <p>{{ article.content }}</p>
                     <p> <strong>{{ article.author }}</strong> • {{ article.publishedAt }} </p>
                 </div>

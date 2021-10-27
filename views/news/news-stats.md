@@ -2,6 +2,7 @@
 title: Follow your statistics
 author: Nick R.
 img: stats-banner.jpg
+root: ../../
 ---
 
 The majority of students think that why they are studying statistics and what are the **uses of statistics in our daily life.**

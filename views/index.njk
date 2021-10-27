@@ -1,7 +1,7 @@
 ---
 layout: base
 title: Home
-root: ./
+root: 
 eleventyNavigation:
     key: Home
     order: 1
@@ -73,7 +73,7 @@ eleventyNavigation:
             <div class="testi--article--content">
                 <em><span>"</span>{{ review.title }}</em>
                 <div class="testi--article--content--user">
-                    <img src={{ review.image }} alt="">
+                    <img src="{{root}}/{{ review.image }}" alt="">
                     <span>Review by <strong> {{ review.name }}</strong></span>
                 </div>
             </div>
@@ -86,16 +86,16 @@ eleventyNavigation:
     <section>
         <article class="sponsor container wrapper">
             <ul class="sponsor--list">
-                <li><img src="assets/img/Sponsor.jpg" alt=""></li>
-                <li><img src="assets/img/Sponsor.jpg" alt=""></li>
-                <li><img src="assets/img/Sponsor.jpg" alt=""></li>
-                <li><img src="assets/img/Sponsor.jpg" alt=""></li>
-                <li><img src="assets/img/Sponsor.jpg" alt=""></li>
-                <li><img src="assets/img/Sponsor.jpg" alt=""></li>
-                <li><img src="assets/img/Sponsor.jpg" alt=""></li>
-                <li><img src="assets/img/Sponsor.jpg" alt=""></li>
-                <li><img src="assets/img/Sponsor.jpg" alt=""></li>
-                <li><img src="assets/img/Sponsor.jpg" alt=""></li>
+                <li><img src="{{root}}/assets/img/Sponsor.jpg" alt=""></li>
+                <li><img src="{{root}}/assets/img/Sponsor.jpg" alt=""></li>
+                <li><img src="{{root}}/assets/img/Sponsor.jpg" alt=""></li>
+                <li><img src="{{root}}/assets/img/Sponsor.jpg" alt=""></li>
+                <li><img src="{{root}}/assets/img/Sponsor.jpg" alt=""></li>
+                <li><img src="{{root}}/assets/img/Sponsor.jpg" alt=""></li>
+                <li><img src="{{root}}/assets/img/Sponsor.jpg" alt=""></li>
+                <li><img src="{{root}}/assets/img/Sponsor.jpg" alt=""></li>
+                <li><img src="{{root}}/assets/img/Sponsor.jpg" alt=""></li>
+                <li><img src="{{root}}/assets/img/Sponsor.jpg" alt=""></li>
             </ul>
         </article>
     </section>

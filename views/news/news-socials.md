@@ -2,6 +2,7 @@
 title: Make Friends Along the way
 author: Nick R.
 img: socials-banner.jpg
+root: ../../
 ---
 
 Adulthood is filled with lots of things you never thought you'd have to do when you were dreaming up your post-college life, such as:
