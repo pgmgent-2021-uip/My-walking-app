@@ -14,10 +14,5 @@ module.exports = function (eleventyConfig) {
             output: 'docs'
         },
         pathPrefix: "/My-walking-app",
-        templateFormats: ["html", "liquid", "md", "njk"],
-        markdownTemplateEngine: "liquid",
-        htmlTemplateEngine: "njk",
-        dataTemplateEngine: "njk",
-        passthroughFileCopy: true,
     }
 }
